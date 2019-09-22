@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- programmed by justin senia -->
+
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+	<script type="text/javascript">
+
+		function parseInt(x){
+		//alert (x);
+			var parsedInt = 0;
+			var n = x.search(/\d/);
+			var m = x.search(/(\D*$)/);
+			alert(x.substring(n-1, m));
+			return x.substring(n-1, m);
+		}
+
+	</script>
+
+</head>
+
+<body>
+	<input name="textbox1" type="text" id="textIn" name="enter a string here to be parsed for an int value"><br>
+	<button type="button" onClick="parseInt(document.getElementById('textIn').value)"> parse Int value from input</button>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+
+</html>
+
+
+
